@@ -1,4 +1,4 @@
-<form method="post" action="/login/tls">
+<form method="post" action="/Ldp/login/tls">
   <div class="form-group">
 
     <button type="submit" class="btn btn-primary" id="login-tls">
@@ -13,7 +13,7 @@
   const button = document.getElementById('login-tls')
   button.addEventListener('click', function(event) {
     event.preventDefault()
-    fetch('/login/tls', { method: 'POST', credentials: 'include' })
+    fetch('/Ldp/login/tls', { method: 'POST', credentials: 'include' })
       .then(function(response) {
         const webId = response.headers.get('user')
         const idp = new URL(webId).origin
@@ -33,7 +33,7 @@
         // TODO: redirect to proper location stored in hidden field redirect_uri
         // depends on https://github.com/solid/node-solid-server/pull/648
         // and https://github.com/solid/oidc-auth-manager/issues/17
-        window.location.href = '/'
+        window.location.href = '/Ldp/'
       })
   })
 </script>

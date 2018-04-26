@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{#if name}}{{name}} &ndash; {{/if}}Solid Home</title>
-  <link rel="stylesheet" href="/common/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Ldp/common/css/bootstrap.min.css">
   <style>
     .session-action {
       margin-right: 15px;
@@ -16,7 +16,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="/" class="navbar-brand">{{#if name}}{{name}} &ndash; {{/if}}Solid Home</a>
+        <a href="/Ldp" class="navbar-brand">{{#if name}}{{name}} &ndash; {{/if}}Solid Home</a>
       </div>
       <div class="navbar-right">
         <button id="session-action" type="button" class="session-action btn btn-default navbar-btn">Loading...</button>
@@ -39,15 +39,15 @@
     <div class="col-md-12">
       <h1>Data</h1>
       <div class="list-group">
-        <a href="/profile/card" target="_blank" class="list-group-item">
+        <a href="/Ldp/profile/card" target="_blank" class="list-group-item">
           <span class="lead">Profile</span>
           <span class="badge">public</span>
         </a>
-        <a href="/inbox/" target="_blank" class="list-group-item">
+        <a href="/Ldp/inbox/" target="_blank" class="list-group-item">
           <span class="lead">Inbox</span>
           <span class="badge">private</span>
         </a>
-        <a href="/public/" target="_blank" class="list-group-item">
+        <a href="/Ldp/public/" target="_blank" class="list-group-item">
           <span class="lead">Public Folder</span>
           <span class="badge">public</span>
         </a>
@@ -75,9 +75,9 @@
   </section>
 </div>
 </body>
-<script src="/common/js/solid-auth-client.bundle.js"></script>
+<script src="/Ldp/common/js/solid-auth-client.bundle.js"></script>
 <script type="text/javascript">
-  const popupUri = window.location.origin + '/common/popup.html'
+  const popupUri = window.location.origin + '/Ldp/common/popup.html'
   const stateData = {
     session: null
   }
